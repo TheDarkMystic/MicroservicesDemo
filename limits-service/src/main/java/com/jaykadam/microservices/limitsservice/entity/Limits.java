@@ -2,32 +2,33 @@ package com.jaykadam.microservices.limitsservice.entity;
 
 public class Limits {
 
-    private int max;
-    private int min;
+    private int maximum;
+    private int minimum;
 
     public Limits() {
     }
 
-    public Limits(int max, int min) {
-        this.max = max;
-        this.min = min;
+    public int getMaximum() {
+        return maximum;
     }
 
-    public int getMax() {
-        return max;
+    public void setMaximum(int maximum) {
+        this.maximum = maximum;
     }
 
-    public void setMax(int max) {
-        this.max = max;
+    public int getMinimum() {
+        return minimum;
     }
 
-    public int getMin() {
-        return min;
+    public void setMinimum(int minimum) {
+        this.minimum = minimum;
     }
 
-    public void setMin(int min) {
-        this.min = min;
+    public Limits(int maximum, int minimum) {
+        this.maximum = maximum;
+        this.minimum = minimum;
     }
+
 
 
 
